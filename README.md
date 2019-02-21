@@ -2,6 +2,19 @@
 
 This is a template to get started with a Gauge project that uses Selenium as the driver to interact with a web browser.
 
+## To install gauge
+
+    brew install gauge
+
+## To install required plaugins
+
+    Java plugin : gauge --install java
+    html reports : gauge --install html-report
+
+## Adding gauge plug in on intelliJ
+
+    Search for gauge plugin, install it and restart intelliJ
+
 ## Installing this template
 
     gauge --install java_maven_selenium
