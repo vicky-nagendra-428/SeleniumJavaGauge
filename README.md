@@ -6,7 +6,7 @@ This is a template to get started with a Gauge project that uses Selenium as the
 
     brew install gauge
 
-## To install required plaugins
+## To install required plugins
 
     Java plugin : gauge --install java
     html reports : gauge --install html-report
