@@ -1,6 +1,7 @@
 package com.pages;
 
 import com.core.BasePage;
+import com.thoughtworks.gauge.Gauge;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -19,8 +20,8 @@ public class DashboardPage extends BasePage {
     }
 
     public boolean checkTheUserNameIsAsExpected(String expectedUserName) {
-        System.out.println("Username : " + userName.getText());
-        System.out.println("Username : " + expectedUserName);
+        Gauge.writeMessage("Username Actual  : " + userName.getText());
+        Gauge.writeMessage("Username Expected: " + expectedUserName);
         return userName.getText().equalsIgnoreCase(expectedUserName);
     }
 
